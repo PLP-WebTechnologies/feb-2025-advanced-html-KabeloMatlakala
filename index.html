@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML5 Elements and Forms</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Advanced HTML5 Elements and Forms</h1>
+    </header>
+
+    <main>
+        <!-- Ordered List with Roman Numerals -->
+        <section>
+            <h2>Ordered List</h2>
+            <ol type="I">
+                <li>Item One</li>
+                <li>Item Two</li>
+                <li>Item Three</li>
+                <li>Item Four</li>
+                <li>Item Five</li>
+            </ol>
+        </section>
+
+        <!-- External Image from Pexels -->
+        <section>
+            <h2>External Image</h2>
+            <img src="https://img.freepik.com/free-photo/morskie-oko-tatry_1204-510.jpg?ga=GA1.1.921496262.1742366334&semt=ais_hybrid" alt="Beautiful Nature">
+        </section>
+
+        <!-- Table of Contacts -->
+        <section>
+            <h2>Contacts Table</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Mobile</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>123 Main St, Anytown, USA</td>
+                        <td>123-456-7890</td>
+                        <td>john.doe@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td>456 Elm St, Anytown, USA</td>
+                        <td>987-654-3210</td>
+                        <td>jane.smith@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Alice Johnson</td>
+                        <td>789 Oak St, Anytown, USA</td>
+                        <td>555-123-4567</td>
+                        <td>alice.johnson@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Bob Brown</td>
+                        <td>321 Pine St, Anytown, USA</td>
+                        <td>111-222-3333</td>
+                        <td>bob.brown@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Charlie Davis</td>
+                        <td>654 Maple St, Anytown, USA</td>
+                        <td>444-555-6666</td>
+                        <td>charlie.davis@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Registration Form -->
+        <section>
+            <h2>Registration Form</h2>
+            <form action="#" method="post">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="6">
+                </div>
+                <div>
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <div>
+                    <label for="dropdown">Select an option:</label>
+                    <select id="dropdown" name="dropdown" required>
+                        <option value="">--Please choose an option--</option>
+                        <option value="option1">Option 1</option>
+                        <option value="option2">Option 2</option>
+                        <option value="option3">Option 3</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Gender:</label>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Female</label>
+                </div>
+                <div>
+                    <label for="terms">Accept Terms and Conditions:</label>
+                    <input type="checkbox" id="terms" name="terms" required>
+                </div>
+                <div>
+                    <button type="submit">Register</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Advanced HTML5 Elements and Forms</p>
+    </footer>
+</body>
+</html>
